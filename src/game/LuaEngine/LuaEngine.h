@@ -17,7 +17,7 @@
 #include "Entities/Player.h"
 #endif
 #include "Weather/Weather.h"
-#include "WorldWorld.h"
+#include "World/World.h"
 #include "Hooks.h"
 #include "ElunaUtility.h"
 
