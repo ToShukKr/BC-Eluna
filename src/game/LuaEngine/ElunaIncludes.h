@@ -34,7 +34,7 @@
 #include "Spells/Spell.h"
 #include "Spells/SpellAuras.h"
 #include "Spells/SpellMgr.h"
-#include "TemporarySummon.h"
+//#include "TemporarySummon.h"
 #include "WorldPacket.h"
 #include "Server/WorldSession.h"
 
