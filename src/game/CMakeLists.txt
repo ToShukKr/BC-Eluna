@@ -61,6 +61,7 @@ target_link_libraries(${LIBRARY_NAME}
   PRIVATE shared
   PRIVATE g3dlite
   PRIVATE detour
+  PRIVATE lualib
   PRIVATE ${ZLIB_LIBRARIES}
 )
 
@@ -116,9 +117,6 @@ source_group("LuaEngine"
     ${SRC_GRP_LUAENGINE}
 )
 
-target_link_libraries(${LIBRARY_NAME}
-  lualib
-)
 
 # Generate precompiled header
 if(PCH)
