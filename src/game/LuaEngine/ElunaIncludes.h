@@ -52,7 +52,7 @@
 #ifdef CMANGOS
 //#include "AI/AggressorAI.h"
 #else
-#include "AggressorAI.h"
+//#include "AggressorAI.h"
 #endif
 #include "BattleGround/BattleGroundMgr.h"
 #include "Server/SQLStorages.h"
