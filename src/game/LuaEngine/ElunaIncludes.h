@@ -50,7 +50,7 @@
 #else
 #include "Config/Config.h"
 #ifdef CMANGOS
-#include "AI/AggressorAI.h"
+//#include "AI/AggressorAI.h"
 #else
 #include "AggressorAI.h"
 #endif
