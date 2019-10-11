@@ -8,7 +8,7 @@
 #define _LUA_ENGINE_H
 
 #include "Common.h"
-#include "SharedDefines.h"
+#include "Globals/SharedDefines.h"
 #include "DBCEnums.h"
 
 #include "Group.h"
