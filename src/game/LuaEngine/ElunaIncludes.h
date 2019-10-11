@@ -21,7 +21,7 @@
 #include "Groups/Group.h"
 #include "Guilds/Guild.h"
 #include "Guilds/GuildMgr.h"
-#include "Language.h"
+#include "Tools/Language.h"
 #include "Mails/Mail.h"
 #include "Maps/MapManager.h"
 #include "Globals/ObjectAccessor.h"
