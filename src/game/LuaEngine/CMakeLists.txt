@@ -57,6 +57,7 @@ if( ${CMAKE_PROJECT_NAME} STREQUAL "MaNGOS" )
     ${CMAKE_SOURCE_DIR}/src/game/References
     ${CMAKE_SOURCE_DIR}/src/game/WorldHandlers
     ${CMAKE_SOURCE_DIR}/src/game/Object
+    ${CMAKE_SOURCE_DIR}/src/game/Globals
   )
   
   if( WIN32 )
