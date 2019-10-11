@@ -72,6 +72,8 @@ set(ADDITIONAL_INCLUDE_DIRS
   ${CMAKE_CURRENT_SOURCE_DIR}/BattleGround
   ${CMAKE_CURRENT_SOURCE_DIR}/OutdoorPvP
   ${CMAKE_CURRENT_SOURCE_DIR}/PlayerBot
+  ${CMAKE_CURRENT_SOURCE_DIR}/LuaEngine
+  ${CMAKE_SOURCE_DIR}/dep/lualib
   ${CMAKE_BINARY_DIR}
 )
 
@@ -98,6 +100,26 @@ if (BUILD_PLAYERBOT)
   add_definitions(-DBUILD_PLAYERBOT)
 endif()
 
+
+file(GLOB SRC_FILES_LUAENGINE LuaEngine/*.cpp LuaEngine/*.h)
+set(SRC_GRP_LUAENGINE
+    ${SRC_FILES_LUAENGINE}
+)
+
+set(LIBRARY_SRCS
+    ${SRC_GRP_LUAENGINE}
+)
+
+
+source_group("LuaEngine"
+  FILES
+    ${SRC_GRP_LUAENGINE}
+)
+
+target_link_libraries(${LIBRARY_NAME}
+  lualib
+)
+
 # Generate precompiled header
 if(PCH)
   if (MSVC)
@@ -118,3 +140,7 @@ if(PCH)
 endif()
 
 install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/PlayerBot/playerbot.conf.dist.in DESTINATION ${CONF_DIR} RENAME playerbot.conf.dist)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/LuaEngine/extensions DESTINATION ${BIN_DIR}/lua_scripts/)
+
+add_dependencies(${LIBRARY_NAME} lualib)
