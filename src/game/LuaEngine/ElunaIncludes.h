@@ -60,11 +60,11 @@
 #endif
 
 #if (!defined(TBC) && !defined(CLASSIC))
-#include "Vehicle.h"
+//#include "Vehicle.h"
 #endif
 
 #ifndef CLASSIC
-#include "ArenaTeam.h"
+#include "Arena/ArenaTeam.h"
 #endif
 
 #ifndef CLASSIC
