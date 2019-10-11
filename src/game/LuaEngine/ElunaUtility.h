@@ -10,12 +10,12 @@
 #include <unordered_map>
 #include <unordered_set>
 #include "Common.h"
-#include "SharedDefines.h"
-#include "ObjectGuid.h"
+#include "Globals/SharedDefines.h"
+#include "Entities/ObjectGuid.h"
 #ifdef TRINITY
 #include "QueryResult.h"
 #ifdef CATA
-#include "Object.h"
+#include "Entities/Object.h"
 #endif
 #else
 #include "Database/QueryResult.h"
