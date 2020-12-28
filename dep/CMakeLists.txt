@@ -17,7 +17,6 @@
 
 # disable warnings for dependencies
 DisableWarnings()
-add_subdirectory(lualib)
 add_subdirectory(recastnavigation)
 add_subdirectory(src)
 if (BUILD_EXTRACTORS)
